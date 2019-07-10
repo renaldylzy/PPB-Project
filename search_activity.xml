@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView1ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_advance"
+            />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnSearch"
+            android:layout_alignLeft="@+id/imageView1ID"
+            android:layout_marginLeft="75dp"
+            android:text=""></EditText>
+
+        <ImageView
+            android:src="@drawable/icon_search"
+            android:id="@+id/btnSearch"
+            android:padding="30px"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1ID"
+            android:onClick="getVape"></ImageView>
+
+        <!--type-->
+        <TextView android:text="Type :"
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch">
+        </TextView>
+        <EditText
+            android:id="@+id/etResult01"
+            android:layout_marginLeft="75dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:editable="false"
+            android:text=""></EditText>
+
+        <!--level-->
+        <TextView android:text="Level :"
+            android:id="@+id/TextView05"
+            android:layout_below="@+id/etResult01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <EditText
+            android:id="@+id/etResult02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView05"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="185dp"
+            android:editable="false"
+            android:text=""></EditText>
+
+        <!--price-->
+        <TextView android:text="Price :"
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etResult02">
+        </TextView>
+        <EditText
+            android:id="@+id/etResult03"
+            android:layout_marginLeft="75dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etResult02"
+            android:editable="false"
+            android:text=""></EditText>
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

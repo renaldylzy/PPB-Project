@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="Search Your Vape"
+            />
+        <TextView android:text="Search Name:" android:id="@+id/TextView01"
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+        </TextView>
+        <EditText android:text="" android:id="@+id/etSearch"
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+        </EditText>
+
+        <ImageButton android:src="@drawable/icon_advance" android:id="@+id/btnSearch"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:onClick="getVape"></ImageButton>
+
+        <!--type-->
+        <TextView android:text="Type :" android:id="@+id/TextView04"
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+        </TextView>
+        <EditText android:text="" android:id="@+id/etResult01"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:editable="false"></EditText>
+
+        <!--level-->
+        <TextView android:text="Level :" android:id="@+id/TextView05"
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+        </TextView>
+        <EditText android:text="" android:id="@+id/etResult02"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:editable="false"></EditText>
+
+        <!--price-->
+        <TextView android:text="Price :" android:id="@+id/TextView06"
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+        </TextView>
+        <EditText android:text="" android:id="@+id/etResult03"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:editable="false"></EditText>
+
+</LinearLayout>
